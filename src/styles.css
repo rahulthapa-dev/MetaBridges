@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255,255,255,.7) !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(255,255,255,.7) !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: rgba(255,255,255,.7) !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: rgba(255,255,255,.7) !important;
+}
+.form-control {
+    background: rgba(255,255,255,.15);
+    border: 1px solid #fff;
+    border-radius: 4px;
+    min-height: 48px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+form .form-control:focus,
+form .form-control:focus-visible {
+    border-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 25%);
+    outline: none;
+}
+.signin-wrap::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height:100% ;
+    width: 100%;
+    background: linear-gradient(90.13deg, #0B0A12 0.12%, #08070E 6.16%, rgba(30, 30, 30, 0.656497) 27.31%, rgba(51, 51, 51, 0.544354) 48.75%, rgba(196, 196, 196, 0) 99.89%);;
+}
+.signin-wrap {
+    background-image: url(assets/img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    /* height: 100vh; */
+    background-color: #21052E;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.btn-custom {
+    border-radius: 4px;
+    border: none;
+}
+.btn-primary-custom {
+    background: linear-gradient(85.12deg, #2A073B 0%, #5E0A84 100%);
+    backdrop-filter: blur(12px);
+    -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+    position: relative;
+}
+.btn-primary-custom::after {
+    left: 0;
+    top:0;
+    background: rgba(0,0,0,.20);
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    content: '';
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+.btn-primary-custom:hover::after {
+    opacity: 1;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+a, .link, a:hover, .link:hover {
+    color: #FF9B6B;
+}
+/*  */
+@media (min-width:768px) {
+    .signin-wrap {
+        min-height: 100vh;
+    }
+}
+@media (min-width:992px) {
+    
+    .title {
+        font-size: 3.2rem;
+    }
+}
+    
+@media (min-width:1400px) {
+    html {
+        font-size: 1.2rem;
+    }
+    .signin-wrap p {
+        font-size: 1.3rem;
+    }
+    form h4 {
+        font-size: 2rem;
+    }
+    .form-control {
+        min-height: 60px;
+    }
+    .container {
+        max-width: calc(100% - 20rem);
+    }
+}
+@media (min-width:1600px) { 
+    .custom-xxl-width {
+        -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    }
+}
